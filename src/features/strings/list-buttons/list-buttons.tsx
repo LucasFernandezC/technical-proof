@@ -1,5 +1,6 @@
 import { Button } from "@/src/components/common/button/button";
 import Modal from "@/src/components/common/modal";
+import Image from "next/image";
 import { useState } from "react";
 
 type ListButtonsProps = {
@@ -63,24 +64,13 @@ const ListButtons = ({
         </Modal>
       )}
       <div className="flex gap-[30px]">
-        <Button modifier="border" disabled={!allowUndo} onClick={() => undo()}>
-          <svg
-            height="20px"
-            width="20px"
-            fill="#324BFF"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 241.631 241.631"
-          >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path d="M44.466,90.562c-12.086,16.382-18.475,35.831-18.475,56.245c0,52.287,42.538,94.825,94.825,94.825 s94.825-42.538,94.825-94.825c0-48.509-36.616-88.621-83.66-94.164V0L44.076,59.481l87.904,59.482V67.779 c38.747,5.449,68.66,38.802,68.66,79.027c0,44.016-35.809,79.825-79.825,79.825s-79.825-35.809-79.825-79.825 c0-17.186,5.375-33.555,15.545-47.339L44.466,90.562z M116.98,90.702l-46.138-31.22l46.138-31.22V90.702z"></path>{" "}
-            </g>
-          </svg>
+        <Button
+          modifier="border"
+          disabled={!allowUndo}
+          onClick={() => undo()}
+          aria-label="Deshacer"
+        >
+          <Image src="../icons/undo.svg" alt="" width={20} height={20} />
         </Button>
         <Button
           modifier="border"

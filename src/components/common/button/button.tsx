@@ -32,8 +32,9 @@ const Button: FunctionComponent<
     <button
       onClick={onClick}
       disabled={disabled}
+      type="button"
       className={classNames(
-        "rounded-[50px] text-[16px]  px-[30px] uppercase hover:cursor-pointer font-medium h-[49px]",
+        "rounded-[50px] text-[16px]  px-[30px] uppercase hover:cursor-pointer font-medium h-[49px] focus:outline-none focus:ring-2 focus:ring-[#324BFF]",
         getModifierStyles(modifier),
         disabled && "opacity-50 cursor-not-allowed pointer-events-none",
         className,

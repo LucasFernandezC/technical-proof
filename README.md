@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Technical Proof
 
-## Getting Started
+Este proyecto fue desarrollado como resolución de la prueba técnica **"Technical Proof"**.
 
-First, run the development server:
+La aplicación permite gestionar una lista de ítems con funcionalidades básicas de agregado, selección y eliminación, manteniendo una estructura clara y buenas prácticas de desarrollo.
+
+---
+
+## Tecnologías utilizadas
+
+- React 19
+- Next.js 16
+- TypeScript
+- Tailwind CSS
+
+---
+
+## Funcionalidades
+
+- Agregar textos a una lista (evitando cadenas vacías).
+- Seleccionar uno o varios ítems.
+- Eliminar un ítem con doble clic.
+- Eliminar múltiples ítems seleccionados.
+- Deshacer la última eliminación (individual o múltiple).
+- Implementación visual basada en los diseños proporcionados.
+
+---
+
+## Detalles de implementación
+
+- Manejo de estado mediante React Hooks.
+- Validación simple para evitar agregar valores vacíos.
+- Uso de HTML semántico (`main`, `section`, `header`, etc.).
+- Mejores prácticas básicas de accesibilidad:
+  - Uso de `aria-live` para cambios dinámicos en la lista.
+  - Botones con `aria-label` cuando corresponde.
+  - Navegación compatible con teclado.
+
+---
+
+## Cómo ejecutar el proyecto
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Iniciar el entorno de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir en el navegador:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Posibles mejoras
 
-To learn more about Next.js, take a look at the following resources:
+- Agregar tests unitarios.
+- Persistencia de datos (por ejemplo con localStorage).
+- Mejoras adicionales en accesibilidad.
+- Pequeñas mejoras de experiencia de usuario (animaciones o feedback visual).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyecto realizado como parte de una evaluación técnica.
