@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/src/components/common/button/button";
 import Modal from "@/src/components/common/modal";
 import Image from "next/image";
